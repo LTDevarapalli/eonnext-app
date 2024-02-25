@@ -1,0 +1,591 @@
+2024-02-25 22:55:45:354 [Appium] Welcome to Appium v2.0.1 (REV ab6a7ed5a122b6d4f9d441ef76c86032398ced5f)
+2024-02-25 22:55:45:356 [Appium] Non-default server args:
+2024-02-25 22:55:45:357 [Appium] { address: 'localhost', basePath: '/', relaxedSecurityEnabled: true }
+2024-02-25 22:55:45:358 [Appium] Attempting to load driver xcuitest...
+2024-02-25 22:55:45:359 [Appium] Requiring driver at /Users/e.on/.appium/node_modules/appium-xcuitest-driver
+2024-02-25 22:55:45:981 [Appium] Attempting to load driver uiautomator2...
+2024-02-25 22:55:45:981 [Appium] Requiring driver at /Users/e.on/.appium/node_modules/appium-uiautomator2-driver
+2024-02-25 22:55:46:514 [Appium] Appium REST http interface listener started on http://localhost:4723
+2024-02-25 22:55:46:514 [Appium] Available drivers:
+2024-02-25 22:55:46:514 [Appium]   - xcuitest@4.32.9 (automationName 'XCUITest')
+2024-02-25 22:55:46:515 [Appium]   - uiautomator2@2.27.0 (automationName 'UiAutomator2')
+2024-02-25 22:55:46:515 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2024-02-25 22:55:47:253 [HTTP] --> POST /session
+2024-02-25 22:55:47:253 [HTTP] {"capabilities":{"alwaysMatch":{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false},"firstMatch":[{}]},"desiredCapabilities":{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false}}
+2024-02-25 22:55:47:254 [AppiumDriver@19c8] Calling AppiumDriver.createSession() with args: [{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false},null,{"alwaysMatch":{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false},"firstMatch":[{}]}]
+2024-02-25 22:55:47:256 [AppiumDriver@19c8] Event 'newSessionRequested' logged at 1708901747254 (22:55:47 GMT+0000 (Greenwich Mean Time))
+2024-02-25 22:55:47:258 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'Android'
+2024-02-25 22:55:47:259 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2024-02-25 22:55:47:259 [Appium] Will require it at /Users/e.on/.appium/node_modules/appium-uiautomator2-driver
+2024-02-25 22:55:47:259 [Appium] Requiring driver at /Users/e.on/.appium/node_modules/appium-uiautomator2-driver
+2024-02-25 22:55:47:259 [AppiumDriver@19c8] Appium v2.0.1 creating new AndroidUiautomator2Driver (v2.27.0) session
+2024-02-25 22:55:47:259 [AppiumDriver@19c8] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2024-02-25 22:55:47:259 [AppiumDriver@19c8] Appium's BaseDriver version is 9.3.16
+2024-02-25 22:55:47:259 [AppiumDriver@19c8] AndroidUiautomator2Driver's BaseDriver version is 9.3.16
+2024-02-25 22:55:47:260 [AppiumDriver@19c8] Applying relaxed security to 'AndroidUiautomator2Driver' as per server command line argument. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+2024-02-25 22:55:47:260 [AndroidUiautomator2Driver@85e4] Creating session with W3C capabilities: {
+2024-02-25 22:55:47:260 [AndroidUiautomator2Driver@85e4]   "alwaysMatch": {
+2024-02-25 22:55:47:260 [AndroidUiautomator2Driver@85e4]     "platformName": "Android",
+2024-02-25 22:55:47:261 [AndroidUiautomator2Driver@85e4]     "appium:orientation": "PORTRAIT",
+2024-02-25 22:55:47:261 [AndroidUiautomator2Driver@85e4]     "appium:appPackage": "com.google.android.youtube",
+2024-02-25 22:55:47:261 [AndroidUiautomator2Driver@85e4]     "appium:appWaitActivity": "com.google.android.apps.youtube.app.WatchWhileActivity",
+2024-02-25 22:55:47:261 [AndroidUiautomator2Driver@85e4]     "appium:automationName": "UiAutomator2",
+2024-02-25 22:55:47:261 [AndroidUiautomator2Driver@85e4]     "appium:newCommandTimeout": 240,
+2024-02-25 22:55:47:261 [AndroidUiautomator2Driver@85e4]     "appium:fullReset": false,
+2024-02-25 22:55:47:261 [AndroidUiautomator2Driver@85e4]     "appium:noReset": false
+2024-02-25 22:55:47:261 [AndroidUiautomator2Driver@85e4]   },
+2024-02-25 22:55:47:261 [AndroidUiautomator2Driver@85e4]   "firstMatch": [
+2024-02-25 22:55:47:261 [AndroidUiautomator2Driver@85e4]     {}
+2024-02-25 22:55:47:261 [AndroidUiautomator2Driver@85e4]   ]
+2024-02-25 22:55:47:261 [AndroidUiautomator2Driver@85e4] }
+2024-02-25 22:55:47:265 [AndroidUiautomator2Driver@85e4 (25d429d2)] Session created with session id: 25d429d2-616e-4a66-a1b0-9d6eb972ad3d
+2024-02-25 22:55:47:265 [AndroidUiautomator2Driver@85e4 (25d429d2)] Starting 'com.google.android.youtube' directly on the device
+2024-02-25 22:55:47:269 [ADB] Running 'adb -P 5037 start-server'
+2024-02-25 22:55:47:280 [ADB] Found 3 'build-tools' folders under '/Users/e.on/Library/Android/sdk' (newest first):
+2024-02-25 22:55:47:280 [ADB]     /Users/e.on/Library/Android/sdk/build-tools/33.0.0
+2024-02-25 22:55:47:280 [ADB]     /Users/e.on/Library/Android/sdk/build-tools/30.0.3
+2024-02-25 22:55:47:280 [ADB]     /Users/e.on/Library/Android/sdk/build-tools/30.0.2
+2024-02-25 22:55:47:280 [ADB] Using 'adb' from '/Users/e.on/Library/Android/sdk/platform-tools/adb'
+2024-02-25 22:55:47:604 [AndroidDriver] Retrieving device list
+2024-02-25 22:55:47:604 [ADB] Trying to find a connected android device
+2024-02-25 22:55:47:604 [ADB] Getting connected devices
+2024-02-25 22:55:47:633 [ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2024-02-25 22:55:47:633 [AndroidDriver] Using device: emulator-5554
+2024-02-25 22:55:47:634 [ADB] Running 'adb -P 5037 start-server'
+2024-02-25 22:55:47:638 [ADB] Using 'adb' from '/Users/e.on/Library/Android/sdk/platform-tools/adb'
+2024-02-25 22:55:47:662 [ADB] Setting device id to emulator-5554
+2024-02-25 22:55:47:663 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2024-02-25 22:55:47:786 [ADB] Current device property 'ro.build.version.sdk': 33
+2024-02-25 22:55:47:786 [ADB] Getting device platform version
+2024-02-25 22:55:47:786 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2024-02-25 22:55:47:825 [ADB] Current device property 'ro.build.version.release': 13
+2024-02-25 22:55:47:825 [ADB] Device API level: 33
+2024-02-25 22:55:47:825 [AndroidUiautomator2Driver@85e4 (25d429d2)] Relaxing hidden api policy
+2024-02-25 22:55:47:825 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2024-02-25 22:55:47:941 [AndroidDriver] No app sent in, not parsing package/activity
+2024-02-25 22:55:47:942 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2024-02-25 22:55:47:970 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2024-02-25 22:55:48:003 [AndroidDriver] Pushing settings apk to device...
+2024-02-25 22:55:48:003 [ADB] Getting install status for io.appium.settings
+2024-02-25 22:55:48:004 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2024-02-25 22:55:48:115 [ADB] 'io.appium.settings' is installed
+2024-02-25 22:55:48:115 [ADB] Getting package info for 'io.appium.settings'
+2024-02-25 22:55:48:115 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2024-02-25 22:55:48:172 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.0.4' >= '5.0.4')
+2024-02-25 22:55:48:173 [ADB] There is no need to install/upgrade '/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2024-02-25 22:55:48:173 [ADB] Getting IDs of all 'io.appium.settings' processes
+2024-02-25 22:55:48:173 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'pgrep --help; echo $?''
+2024-02-25 22:55:48:227 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2024-02-25 22:55:48:315 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2024-02-25 22:55:48:316 [Logcat] Starting logs capture with command: /Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+2024-02-25 22:55:48:376 [AndroidUiautomator2Driver@85e4 (25d429d2)] Forwarding UiAutomator2 Server port 6790 to local port 8200
+2024-02-25 22:55:48:377 [ADB] Forwarding system: 8200 to device: 6790
+2024-02-25 22:55:48:377 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8200 tcp:6790'
+2024-02-25 22:55:48:417 [ADB] Getting install status for io.appium.uiautomator2.server
+2024-02-25 22:55:48:417 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2024-02-25 22:55:48:492 [ADB] 'io.appium.uiautomator2.server' is installed
+2024-02-25 22:55:48:492 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2024-02-25 22:55:48:493 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2024-02-25 22:55:48:998 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('5.12.0' >= '5.12.0')
+2024-02-25 22:55:48:998 [AndroidUiautomator2Driver@85e4 (25d429d2)] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2024-02-25 22:55:48:998 [ADB] Checking app cert for /Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.12.0.apk
+2024-02-25 22:55:49:022 [ADB] Using 'apksigner.jar' from '/Users/e.on/Library/Android/sdk/build-tools/33.0.0/lib/apksigner.jar'
+2024-02-25 22:55:49:022 [ADB] Starting apksigner: /Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/bin/java -Xmx1024M -Xss1m -jar /Users/e.on/Library/Android/sdk/build-tools/33.0.0/lib/apksigner.jar verify --print-certs /Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.12.0.apk
+2024-02-25 22:55:51:793 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2024-02-25 22:55:51:793 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2024-02-25 22:55:51:793 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2024-02-25 22:55:51:793 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2024-02-25 22:55:51:793 [ADB] 
+2024-02-25 22:55:51:794 [ADB] sha256 hash did match for 'appium-uiautomator2-server-v5.12.0.apk'
+2024-02-25 22:55:51:794 [ADB] '/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.12.0.apk' is signed with the default certificate
+2024-02-25 22:55:51:794 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2024-02-25 22:55:51:794 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server.test'
+2024-02-25 22:55:51:878 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2024-02-25 22:55:51:879 [ADB] Checking app cert for /Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2024-02-25 22:55:51:881 [ADB] Starting apksigner: /Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/bin/java -Xmx1024M -Xss1m -jar /Users/e.on/Library/Android/sdk/build-tools/33.0.0/lib/apksigner.jar verify --print-certs /Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2024-02-25 22:55:52:633 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2024-02-25 22:55:52:634 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2024-02-25 22:55:52:634 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2024-02-25 22:55:52:634 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2024-02-25 22:55:52:634 [ADB] 
+2024-02-25 22:55:52:634 [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2024-02-25 22:55:52:634 [ADB] '/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+2024-02-25 22:55:52:634 [AndroidUiautomator2Driver@85e4 (25d429d2)] Server packages are not going to be (re)installed
+2024-02-25 22:55:52:635 [AndroidUiautomator2Driver@85e4 (25d429d2)] Waiting up to 30000ms for services to be available
+2024-02-25 22:55:52:636 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+2024-02-25 22:55:52:693 [AndroidUiautomator2Driver@85e4 (25d429d2)] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2024-02-25 22:55:52:695 [ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2024-02-25 22:55:52:695 [ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2024-02-25 22:55:52:695 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2024-02-25 22:55:52:756 [AndroidUiautomator2Driver@85e4 (25d429d2)] No app capability. Assuming it is already on the device
+2024-02-25 22:55:52:757 [ADB] Getting install status for com.google.android.youtube
+2024-02-25 22:55:52:757 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package com.google.android.youtube'
+2024-02-25 22:55:52:842 [ADB] 'com.google.android.youtube' is installed
+2024-02-25 22:55:52:842 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop com.google.android.youtube'
+2024-02-25 22:55:53:357 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear com.google.android.youtube'
+2024-02-25 22:55:53:641 [AndroidDriver] Performed fast reset on the installed 'com.google.android.youtube' application (stop and clear)
+2024-02-25 22:55:53:643 [AndroidUiautomator2Driver@85e4 (25d429d2)] Performing shallow cleanup of automation leftovers
+2024-02-25 22:55:53:681 [AndroidUiautomator2Driver@85e4 (25d429d2)] No obsolete sessions have been detected (socket hang up)
+2024-02-25 22:55:53:681 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+2024-02-25 22:55:53:772 [AndroidUiautomator2Driver@85e4 (25d429d2)] Starting UIAutomator2 server 5.12.0
+2024-02-25 22:55:53:773 [AndroidUiautomator2Driver@85e4 (25d429d2)] Using UIAutomator2 server from '/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.12.0.apk' and test from '/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2024-02-25 22:55:53:775 [AndroidUiautomator2Driver@85e4 (25d429d2)] Waiting up to 30000ms for UiAutomator2 to be online...
+2024-02-25 22:55:53:776 [ADB] Creating ADB subprocess with args: ["-P","5037","-s","emulator-5554","shell","am","instrument","-w","-e","disableAnalytics",true,"io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2024-02-25 22:55:53:785 [AndroidUiautomator2Driver@85e4 (25d429d2)] Matched '/status' to command name 'getStatus'
+2024-02-25 22:55:53:787 [AndroidUiautomator2Driver@85e4 (25d429d2)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-02-25 22:55:53:799 [AndroidUiautomator2Driver@85e4 (25d429d2)] socket hang up
+2024-02-25 22:55:54:801 [AndroidUiautomator2Driver@85e4 (25d429d2)] Matched '/status' to command name 'getStatus'
+2024-02-25 22:55:54:802 [AndroidUiautomator2Driver@85e4 (25d429d2)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-02-25 22:55:54:820 [AndroidUiautomator2Driver@85e4 (25d429d2)] socket hang up
+2024-02-25 22:55:55:716 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2024-02-25 22:55:55:821 [AndroidUiautomator2Driver@85e4 (25d429d2)] Matched '/status' to command name 'getStatus'
+2024-02-25 22:55:55:821 [AndroidUiautomator2Driver@85e4 (25d429d2)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-02-25 22:55:55:827 [AndroidUiautomator2Driver@85e4 (25d429d2)] socket hang up
+2024-02-25 22:55:56:830 [AndroidUiautomator2Driver@85e4 (25d429d2)] Matched '/status' to command name 'getStatus'
+2024-02-25 22:55:56:831 [AndroidUiautomator2Driver@85e4 (25d429d2)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-02-25 22:55:56:837 [AndroidUiautomator2Driver@85e4 (25d429d2)] socket hang up
+2024-02-25 22:55:57:843 [AndroidUiautomator2Driver@85e4 (25d429d2)] Matched '/status' to command name 'getStatus'
+2024-02-25 22:55:57:844 [AndroidUiautomator2Driver@85e4 (25d429d2)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-02-25 22:55:57:923 [AndroidUiautomator2Driver@85e4 (25d429d2)] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+2024-02-25 22:55:57:923 [AndroidUiautomator2Driver@85e4 (25d429d2)] The initialization of the instrumentation process took 4149ms
+2024-02-25 22:55:57:923 [AndroidUiautomator2Driver@85e4 (25d429d2)] Matched '/session' to command name 'createSession'
+2024-02-25 22:55:57:924 [AndroidUiautomator2Driver@85e4 (25d429d2)] Proxying [POST /session] to [POST http://127.0.0.1:8200/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","orientation":"PORTRAIT","appPackage":"com.google.android.youtube","appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","automationName":"UiAutomator2","newCommandTimeout":240,"fullReset":false,"noReset":false},"platformName":"Android","orientation":"PORTRAIT","appPackage":"com.google.android.youtube","appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","automationName":"UiAutomator2","newCommandTimeout":240,"fullReset":false,"noReset":false,"deviceName":"emulator-5554","deviceUDID":"emulator-5554"}],"alwaysMatch":{}}}
+2024-02-25 22:55:57:941 [AndroidUiautomator2Driver@85e4 (25d429d2)] Got response with status 200: {"sessionId":"66c39032-f0ca-4901-8ffd-6d60529e4104","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","orientation":"PORTRAIT","appPackage":"com.google.android.youtube","appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","automationName":"UiAutomator2","newCommandTimeout":240,"fullReset":false,"noReset":false},"platformName":"Android","orientation":"PORTRAIT","appPackage":"com.google.android.youtube","appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","automationName":"UiAutomator2","newCommandTimeout":240,"fullReset":false,"noReset":false,"deviceName":"emulator-5554","deviceUDID":"emulator-5554"}],"alwaysMatch":{}},"sessionId":"66c39032-f0ca-4901-8ffd-6d60529e4104"}}
+2024-02-25 22:55:57:941 [AndroidUiautomator2Driver@85e4 (25d429d2)] Determined the downstream protocol as 'W3C'
+2024-02-25 22:55:57:951 [AndroidUiautomator2Driver@85e4 (25d429d2)] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/session/66c39032-f0ca-4901-8ffd-6d60529e4104/appium/device/info] with no body
+2024-02-25 22:55:58:047 [AndroidUiautomator2Driver@85e4 (25d429d2)] Got response with status 200: {"sessionId":"66c39032-f0ca-4901-8ffd-6d60529e4104","value":{"androidId":"d48d5fa621d8bbf5","apiVersion":"33","bluetooth":{"state":"ON"},"brand":"google","carrierName":"T-Mobile","displayDensity":560,"locale":"en_US","manufacturer":"Google","model":"sdk_gphone64_arm64","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30000,"linkUpstreamBandwidthKbps":15000,"networkCapabilities":"NET_CAPABILITY_MMS,NET_CAPABILITY_SUPL,NET_CAPABILITY_DUN,NET_CAPABILITY_FOTA,NET_CAPABILITY_IMS,NET_CAPABILITY_CBS,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-2147483648,"transportTypes":"TRANSPORT_CELLULAR"},"detailedState":"CONNECTED","extraInfo":"epc.tmobile.com","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":13,"subtypeName":"LTE","type":0,"typeName":"MOBILE"},{"capabiliti...
+2024-02-25 22:55:58:047 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window'
+2024-02-25 22:55:58:211 [AndroidDriver] Screen already unlocked, doing nothing
+2024-02-25 22:55:58:212 [AndroidUiautomator2Driver@85e4 (25d429d2)] Starting 'com.google.android.youtube/undefined and waiting for 'com.google.android.youtube/com.google.android.apps.youtube.app.WatchWhileActivity'
+2024-02-25 22:55:58:213 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2024-02-25 22:55:58:281 [AndroidUiautomator2Driver@85e4 (25d429d2)] Deleting UiAutomator2 session
+2024-02-25 22:55:58:283 [AndroidUiautomator2Driver@85e4 (25d429d2)] Deleting UiAutomator2 server session
+2024-02-25 22:55:58:283 [AndroidUiautomator2Driver@85e4 (25d429d2)] Matched '/' to command name 'deleteSession'
+2024-02-25 22:55:58:283 [AndroidUiautomator2Driver@85e4 (25d429d2)] Proxying [DELETE /] to [DELETE http://127.0.0.1:8200/session/66c39032-f0ca-4901-8ffd-6d60529e4104] with no body
+2024-02-25 22:55:58:307 [AndroidUiautomator2Driver@85e4 (25d429d2)] Got response with status 200: {"sessionId":"66c39032-f0ca-4901-8ffd-6d60529e4104","value":null}
+2024-02-25 22:55:58:308 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2024-02-25 22:55:58:312 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop com.google.android.youtube'
+2024-02-25 22:55:58:373 [Logcat] Stopping logcat capture
+2024-02-25 22:55:58:377 [ADB] Removing forwarded port socket connection: 8200 
+2024-02-25 22:55:58:377 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward --remove tcp:8200'
+2024-02-25 22:55:58:408 [AndroidUiautomator2Driver@85e4 (25d429d2)] Restoring hidden api policy to the device default configuration
+2024-02-25 22:55:58:409 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2024-02-25 22:55:58:482 [AppiumDriver@19c8] Event 'newSessionStarted' logged at 1708901758482 (22:55:58 GMT+0000 (Greenwich Mean Time))
+2024-02-25 22:55:58:520 [AppiumDriver@19c8] Encountered internal error running command: Error: Cannot start the 'com.google.android.youtube' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 1'; Command output: Error: Intent matches multiple activities; can't stop: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 }
+2024-02-25 22:55:58:520 [AppiumDriver@19c8] 
+2024-02-25 22:55:58:520 [AppiumDriver@19c8]     at ADB.startApp (/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/lib/tools/apk-utils.js:180:11)
+2024-02-25 22:55:58:520 [AppiumDriver@19c8]     at AndroidUiautomator2Driver.ensureAppStarts (/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/lib/driver.js:590:5)
+2024-02-25 22:55:58:520 [AppiumDriver@19c8]     at AndroidUiautomator2Driver.startUiAutomator2Session (/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/lib/driver.js:445:7)
+2024-02-25 22:55:58:520 [AppiumDriver@19c8]     at AndroidUiautomator2Driver.createSession (/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/lib/driver.js:241:7)
+2024-02-25 22:55:58:520 [AppiumDriver@19c8]     at AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/lib/appium.js:352:35)
+2024-02-25 22:55:58:529 [HTTP] <-- POST /session 500 11276 ms - 1616
+2024-02-25 22:55:58:529 [HTTP] 
+2024-02-25 22:55:58:542 [HTTP] --> POST /session
+2024-02-25 22:55:58:543 [HTTP] {"capabilities":{"alwaysMatch":{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false},"firstMatch":[{}]},"desiredCapabilities":{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false}}
+2024-02-25 22:55:58:543 [AppiumDriver@19c8] Calling AppiumDriver.createSession() with args: [{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false},null,{"alwaysMatch":{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false},"firstMatch":[{}]}]
+2024-02-25 22:55:58:543 [AppiumDriver@19c8] Event 'newSessionRequested' logged at 1708901758543 (22:55:58 GMT+0000 (Greenwich Mean Time))
+2024-02-25 22:55:58:544 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'Android'
+2024-02-25 22:55:58:544 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2024-02-25 22:55:58:544 [Appium] Will require it at /Users/e.on/.appium/node_modules/appium-uiautomator2-driver
+2024-02-25 22:55:58:544 [Appium] Requiring driver at /Users/e.on/.appium/node_modules/appium-uiautomator2-driver
+2024-02-25 22:55:58:544 [AppiumDriver@19c8] Appium v2.0.1 creating new AndroidUiautomator2Driver (v2.27.0) session
+2024-02-25 22:55:58:544 [AppiumDriver@19c8] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2024-02-25 22:55:58:544 [AppiumDriver@19c8] Appium's BaseDriver version is 9.3.16
+2024-02-25 22:55:58:544 [AppiumDriver@19c8] AndroidUiautomator2Driver's BaseDriver version is 9.3.16
+2024-02-25 22:55:58:544 [AppiumDriver@19c8] Applying relaxed security to 'AndroidUiautomator2Driver' as per server command line argument. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+2024-02-25 22:55:58:544 [AndroidUiautomator2Driver@129f] Creating session with W3C capabilities: {
+2024-02-25 22:55:58:544 [AndroidUiautomator2Driver@129f]   "alwaysMatch": {
+2024-02-25 22:55:58:544 [AndroidUiautomator2Driver@129f]     "platformName": "Android",
+2024-02-25 22:55:58:544 [AndroidUiautomator2Driver@129f]     "appium:orientation": "PORTRAIT",
+2024-02-25 22:55:58:544 [AndroidUiautomator2Driver@129f]     "appium:appPackage": "com.google.android.youtube",
+2024-02-25 22:55:58:544 [AndroidUiautomator2Driver@129f]     "appium:appWaitActivity": "com.google.android.apps.youtube.app.WatchWhileActivity",
+2024-02-25 22:55:58:545 [AndroidUiautomator2Driver@129f]     "appium:automationName": "UiAutomator2",
+2024-02-25 22:55:58:545 [AndroidUiautomator2Driver@129f]     "appium:newCommandTimeout": 240,
+2024-02-25 22:55:58:545 [AndroidUiautomator2Driver@129f]     "appium:fullReset": false,
+2024-02-25 22:55:58:545 [AndroidUiautomator2Driver@129f]     "appium:noReset": false
+2024-02-25 22:55:58:545 [AndroidUiautomator2Driver@129f]   },
+2024-02-25 22:55:58:545 [AndroidUiautomator2Driver@129f]   "firstMatch": [
+2024-02-25 22:55:58:545 [AndroidUiautomator2Driver@129f]     {}
+2024-02-25 22:55:58:545 [AndroidUiautomator2Driver@129f]   ]
+2024-02-25 22:55:58:545 [AndroidUiautomator2Driver@129f] }
+2024-02-25 22:55:58:550 [AndroidUiautomator2Driver@129f (bcf09155)] Session created with session id: bcf09155-7d0a-41e0-b41e-b1d6c18c549a
+2024-02-25 22:55:58:551 [AndroidUiautomator2Driver@129f (bcf09155)] Starting 'com.google.android.youtube' directly on the device
+2024-02-25 22:55:58:557 [ADB] Running 'adb -P 5037 start-server'
+2024-02-25 22:55:58:563 [ADB] Using 'adb' from '/Users/e.on/Library/Android/sdk/platform-tools/adb'
+2024-02-25 22:55:58:587 [AndroidDriver] Retrieving device list
+2024-02-25 22:55:58:588 [ADB] Trying to find a connected android device
+2024-02-25 22:55:58:588 [ADB] Getting connected devices
+2024-02-25 22:55:58:616 [ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2024-02-25 22:55:58:616 [AndroidDriver] Using device: emulator-5554
+2024-02-25 22:55:58:616 [ADB] Running 'adb -P 5037 start-server'
+2024-02-25 22:55:58:621 [ADB] Using 'adb' from '/Users/e.on/Library/Android/sdk/platform-tools/adb'
+2024-02-25 22:55:58:644 [ADB] Setting device id to emulator-5554
+2024-02-25 22:55:58:644 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2024-02-25 22:55:58:681 [ADB] Current device property 'ro.build.version.sdk': 33
+2024-02-25 22:55:58:681 [ADB] Getting device platform version
+2024-02-25 22:55:58:681 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2024-02-25 22:55:58:717 [ADB] Current device property 'ro.build.version.release': 13
+2024-02-25 22:55:58:718 [ADB] Device API level: 33
+2024-02-25 22:55:58:718 [AndroidUiautomator2Driver@129f (bcf09155)] Relaxing hidden api policy
+2024-02-25 22:55:58:718 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2024-02-25 22:55:58:781 [Instrumentation] .
+2024-02-25 22:55:58:790 [AndroidDriver] No app sent in, not parsing package/activity
+2024-02-25 22:55:58:790 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2024-02-25 22:55:58:811 [Instrumentation] Time: 3.071
+2024-02-25 22:55:58:811 [Instrumentation] 
+2024-02-25 22:55:58:812 [Instrumentation] OK (1 test)
+2024-02-25 22:55:58:825 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2024-02-25 22:55:58:864 [Instrumentation] The process has exited with code 0
+2024-02-25 22:55:58:880 [AndroidDriver] Pushing settings apk to device...
+2024-02-25 22:55:58:880 [ADB] Getting install status for io.appium.settings
+2024-02-25 22:55:58:880 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2024-02-25 22:55:58:972 [ADB] 'io.appium.settings' is installed
+2024-02-25 22:55:58:972 [ADB] Getting package info for 'io.appium.settings'
+2024-02-25 22:55:58:972 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2024-02-25 22:55:59:021 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.0.4' >= '5.0.4')
+2024-02-25 22:55:59:021 [ADB] There is no need to install/upgrade '/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2024-02-25 22:55:59:021 [ADB] Getting IDs of all 'io.appium.settings' processes
+2024-02-25 22:55:59:021 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'pgrep --help; echo $?''
+2024-02-25 22:55:59:070 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2024-02-25 22:55:59:125 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2024-02-25 22:55:59:125 [Logcat] Starting logs capture with command: /Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+2024-02-25 22:55:59:173 [AndroidUiautomator2Driver@129f (bcf09155)] Forwarding UiAutomator2 Server port 6790 to local port 8200
+2024-02-25 22:55:59:174 [ADB] Forwarding system: 8200 to device: 6790
+2024-02-25 22:55:59:174 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8200 tcp:6790'
+2024-02-25 22:55:59:209 [ADB] Getting install status for io.appium.uiautomator2.server
+2024-02-25 22:55:59:210 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2024-02-25 22:55:59:270 [ADB] 'io.appium.uiautomator2.server' is installed
+2024-02-25 22:55:59:270 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2024-02-25 22:55:59:270 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2024-02-25 22:55:59:849 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('5.12.0' >= '5.12.0')
+2024-02-25 22:55:59:850 [AndroidUiautomator2Driver@129f (bcf09155)] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2024-02-25 22:55:59:850 [ADB] Checking app cert for /Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.12.0.apk
+2024-02-25 22:55:59:898 [ADB] Using the previously cached signature entry for 'appium-uiautomator2-server-v5.12.0.apk'
+2024-02-25 22:55:59:899 [ADB] sha256 hash did match for 'appium-uiautomator2-server-v5.12.0.apk'
+2024-02-25 22:55:59:899 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2024-02-25 22:55:59:900 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server.test'
+2024-02-25 22:56:00:007 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2024-02-25 22:56:00:007 [ADB] Checking app cert for /Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2024-02-25 22:56:00:009 [ADB] Using the previously cached signature entry for 'appium-uiautomator2-server-debug-androidTest.apk'
+2024-02-25 22:56:00:009 [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2024-02-25 22:56:00:009 [AndroidUiautomator2Driver@129f (bcf09155)] Server packages are not going to be (re)installed
+2024-02-25 22:56:00:010 [AndroidUiautomator2Driver@129f (bcf09155)] Waiting up to 30000ms for services to be available
+2024-02-25 22:56:00:010 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+2024-02-25 22:56:00:152 [AndroidUiautomator2Driver@129f (bcf09155)] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2024-02-25 22:56:00:157 [ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2024-02-25 22:56:00:157 [ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2024-02-25 22:56:00:158 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2024-02-25 22:56:00:297 [AndroidUiautomator2Driver@129f (bcf09155)] No app capability. Assuming it is already on the device
+2024-02-25 22:56:00:298 [ADB] Getting install status for com.google.android.youtube
+2024-02-25 22:56:00:299 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package com.google.android.youtube'
+2024-02-25 22:56:00:478 [ADB] 'com.google.android.youtube' is installed
+2024-02-25 22:56:00:478 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop com.google.android.youtube'
+2024-02-25 22:56:00:566 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear com.google.android.youtube'
+2024-02-25 22:56:00:715 [AndroidDriver] Performed fast reset on the installed 'com.google.android.youtube' application (stop and clear)
+2024-02-25 22:56:00:715 [AndroidUiautomator2Driver@129f (bcf09155)] Performing shallow cleanup of automation leftovers
+2024-02-25 22:56:00:752 [AndroidUiautomator2Driver@129f (bcf09155)] No obsolete sessions have been detected (socket hang up)
+2024-02-25 22:56:00:753 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+2024-02-25 22:56:00:849 [AndroidUiautomator2Driver@129f (bcf09155)] Starting UIAutomator2 server 5.12.0
+2024-02-25 22:56:00:849 [AndroidUiautomator2Driver@129f (bcf09155)] Using UIAutomator2 server from '/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.12.0.apk' and test from '/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2024-02-25 22:56:00:849 [AndroidUiautomator2Driver@129f (bcf09155)] Waiting up to 30000ms for UiAutomator2 to be online...
+2024-02-25 22:56:00:850 [ADB] Creating ADB subprocess with args: ["-P","5037","-s","emulator-5554","shell","am","instrument","-w","-e","disableAnalytics",true,"io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2024-02-25 22:56:00:856 [AndroidUiautomator2Driver@129f (bcf09155)] Matched '/status' to command name 'getStatus'
+2024-02-25 22:56:00:856 [AndroidUiautomator2Driver@129f (bcf09155)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-02-25 22:56:00:862 [AndroidUiautomator2Driver@129f (bcf09155)] socket hang up
+2024-02-25 22:56:01:865 [AndroidUiautomator2Driver@129f (bcf09155)] Matched '/status' to command name 'getStatus'
+2024-02-25 22:56:01:866 [AndroidUiautomator2Driver@129f (bcf09155)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-02-25 22:56:01:885 [AndroidUiautomator2Driver@129f (bcf09155)] socket hang up
+2024-02-25 22:56:02:607 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2024-02-25 22:56:02:887 [AndroidUiautomator2Driver@129f (bcf09155)] Matched '/status' to command name 'getStatus'
+2024-02-25 22:56:02:887 [AndroidUiautomator2Driver@129f (bcf09155)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-02-25 22:56:02:903 [AndroidUiautomator2Driver@129f (bcf09155)] socket hang up
+2024-02-25 22:56:03:906 [AndroidUiautomator2Driver@129f (bcf09155)] Matched '/status' to command name 'getStatus'
+2024-02-25 22:56:03:907 [AndroidUiautomator2Driver@129f (bcf09155)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-02-25 22:56:03:919 [AndroidUiautomator2Driver@129f (bcf09155)] socket hang up
+2024-02-25 22:56:04:922 [AndroidUiautomator2Driver@129f (bcf09155)] Matched '/status' to command name 'getStatus'
+2024-02-25 22:56:04:923 [AndroidUiautomator2Driver@129f (bcf09155)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-02-25 22:56:04:998 [AndroidUiautomator2Driver@129f (bcf09155)] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+2024-02-25 22:56:04:998 [AndroidUiautomator2Driver@129f (bcf09155)] The initialization of the instrumentation process took 4149ms
+2024-02-25 22:56:04:998 [AndroidUiautomator2Driver@129f (bcf09155)] Matched '/session' to command name 'createSession'
+2024-02-25 22:56:04:999 [AndroidUiautomator2Driver@129f (bcf09155)] Proxying [POST /session] to [POST http://127.0.0.1:8200/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","orientation":"PORTRAIT","appPackage":"com.google.android.youtube","appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","automationName":"UiAutomator2","newCommandTimeout":240,"fullReset":false,"noReset":false},"platformName":"Android","orientation":"PORTRAIT","appPackage":"com.google.android.youtube","appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","automationName":"UiAutomator2","newCommandTimeout":240,"fullReset":false,"noReset":false,"deviceName":"emulator-5554","deviceUDID":"emulator-5554"}],"alwaysMatch":{}}}
+2024-02-25 22:56:05:028 [AndroidUiautomator2Driver@129f (bcf09155)] Got response with status 200: {"sessionId":"cb21b6b8-6afd-4138-9363-8cbc36fd3ff9","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","orientation":"PORTRAIT","appPackage":"com.google.android.youtube","appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","automationName":"UiAutomator2","newCommandTimeout":240,"fullReset":false,"noReset":false},"platformName":"Android","orientation":"PORTRAIT","appPackage":"com.google.android.youtube","appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","automationName":"UiAutomator2","newCommandTimeout":240,"fullReset":false,"noReset":false,"deviceName":"emulator-5554","deviceUDID":"emulator-5554"}],"alwaysMatch":{}},"sessionId":"cb21b6b8-6afd-4138-9363-8cbc36fd3ff9"}}
+2024-02-25 22:56:05:028 [AndroidUiautomator2Driver@129f (bcf09155)] Determined the downstream protocol as 'W3C'
+2024-02-25 22:56:05:036 [AndroidUiautomator2Driver@129f (bcf09155)] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/session/cb21b6b8-6afd-4138-9363-8cbc36fd3ff9/appium/device/info] with no body
+2024-02-25 22:56:05:113 [AndroidUiautomator2Driver@129f (bcf09155)] Got response with status 200: {"sessionId":"cb21b6b8-6afd-4138-9363-8cbc36fd3ff9","value":{"androidId":"d48d5fa621d8bbf5","apiVersion":"33","bluetooth":{"state":"ON"},"brand":"google","carrierName":"T-Mobile","displayDensity":560,"locale":"en_US","manufacturer":"Google","model":"sdk_gphone64_arm64","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30000,"linkUpstreamBandwidthKbps":15000,"networkCapabilities":"NET_CAPABILITY_MMS,NET_CAPABILITY_SUPL,NET_CAPABILITY_DUN,NET_CAPABILITY_FOTA,NET_CAPABILITY_IMS,NET_CAPABILITY_CBS,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-2147483648,"transportTypes":"TRANSPORT_CELLULAR"},"detailedState":"CONNECTED","extraInfo":"epc.tmobile.com","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":13,"subtypeName":"LTE","type":0,"typeName":"MOBILE"},{"capabiliti...
+2024-02-25 22:56:05:114 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window'
+2024-02-25 22:56:05:267 [AndroidDriver] Screen already unlocked, doing nothing
+2024-02-25 22:56:05:267 [AndroidUiautomator2Driver@129f (bcf09155)] Starting 'com.google.android.youtube/undefined and waiting for 'com.google.android.youtube/com.google.android.apps.youtube.app.WatchWhileActivity'
+2024-02-25 22:56:05:268 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2024-02-25 22:56:05:325 [AndroidUiautomator2Driver@129f (bcf09155)] Deleting UiAutomator2 session
+2024-02-25 22:56:05:326 [AndroidUiautomator2Driver@129f (bcf09155)] Deleting UiAutomator2 server session
+2024-02-25 22:56:05:326 [AndroidUiautomator2Driver@129f (bcf09155)] Matched '/' to command name 'deleteSession'
+2024-02-25 22:56:05:326 [AndroidUiautomator2Driver@129f (bcf09155)] Proxying [DELETE /] to [DELETE http://127.0.0.1:8200/session/cb21b6b8-6afd-4138-9363-8cbc36fd3ff9] with no body
+2024-02-25 22:56:05:341 [AndroidUiautomator2Driver@129f (bcf09155)] Got response with status 200: {"sessionId":"cb21b6b8-6afd-4138-9363-8cbc36fd3ff9","value":null}
+2024-02-25 22:56:05:341 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2024-02-25 22:56:05:345 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop com.google.android.youtube'
+2024-02-25 22:56:05:397 [Logcat] Stopping logcat capture
+2024-02-25 22:56:05:400 [ADB] Removing forwarded port socket connection: 8200 
+2024-02-25 22:56:05:401 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward --remove tcp:8200'
+2024-02-25 22:56:05:431 [AndroidUiautomator2Driver@129f (bcf09155)] Restoring hidden api policy to the device default configuration
+2024-02-25 22:56:05:431 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2024-02-25 22:56:05:504 [AppiumDriver@19c8] Event 'newSessionStarted' logged at 1708901765504 (22:56:05 GMT+0000 (Greenwich Mean Time))
+2024-02-25 22:56:05:505 [AppiumDriver@19c8] Encountered internal error running command: Error: Cannot start the 'com.google.android.youtube' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 1'; Command output: Error: Intent matches multiple activities; can't stop: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 }
+2024-02-25 22:56:05:505 [AppiumDriver@19c8] 
+2024-02-25 22:56:05:505 [AppiumDriver@19c8]     at ADB.startApp (/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/lib/tools/apk-utils.js:180:11)
+2024-02-25 22:56:05:505 [AppiumDriver@19c8]     at AndroidUiautomator2Driver.ensureAppStarts (/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/lib/driver.js:590:5)
+2024-02-25 22:56:05:505 [AppiumDriver@19c8]     at AndroidUiautomator2Driver.startUiAutomator2Session (/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/lib/driver.js:445:7)
+2024-02-25 22:56:05:505 [AppiumDriver@19c8]     at AndroidUiautomator2Driver.createSession (/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/lib/driver.js:241:7)
+2024-02-25 22:56:05:505 [AppiumDriver@19c8]     at AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/lib/appium.js:352:35)
+2024-02-25 22:56:05:507 [HTTP] <-- POST /session 500 6964 ms - 1616
+2024-02-25 22:56:05:507 [HTTP] 
+2024-02-25 22:56:05:513 [HTTP] --> POST /session
+2024-02-25 22:56:05:513 [HTTP] {"capabilities":{"alwaysMatch":{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false},"firstMatch":[{}]},"desiredCapabilities":{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false}}
+2024-02-25 22:56:05:513 [AppiumDriver@19c8] Calling AppiumDriver.createSession() with args: [{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false},null,{"alwaysMatch":{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false},"firstMatch":[{}]}]
+2024-02-25 22:56:05:514 [AppiumDriver@19c8] Event 'newSessionRequested' logged at 1708901765514 (22:56:05 GMT+0000 (Greenwich Mean Time))
+2024-02-25 22:56:05:514 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'Android'
+2024-02-25 22:56:05:514 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2024-02-25 22:56:05:514 [Appium] Will require it at /Users/e.on/.appium/node_modules/appium-uiautomator2-driver
+2024-02-25 22:56:05:515 [Appium] Requiring driver at /Users/e.on/.appium/node_modules/appium-uiautomator2-driver
+2024-02-25 22:56:05:515 [AppiumDriver@19c8] Appium v2.0.1 creating new AndroidUiautomator2Driver (v2.27.0) session
+2024-02-25 22:56:05:515 [AppiumDriver@19c8] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2024-02-25 22:56:05:515 [AppiumDriver@19c8] Appium's BaseDriver version is 9.3.16
+2024-02-25 22:56:05:515 [AppiumDriver@19c8] AndroidUiautomator2Driver's BaseDriver version is 9.3.16
+2024-02-25 22:56:05:515 [AppiumDriver@19c8] Applying relaxed security to 'AndroidUiautomator2Driver' as per server command line argument. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+2024-02-25 22:56:05:515 [AndroidUiautomator2Driver@1850] Creating session with W3C capabilities: {
+2024-02-25 22:56:05:515 [AndroidUiautomator2Driver@1850]   "alwaysMatch": {
+2024-02-25 22:56:05:515 [AndroidUiautomator2Driver@1850]     "platformName": "Android",
+2024-02-25 22:56:05:515 [AndroidUiautomator2Driver@1850]     "appium:orientation": "PORTRAIT",
+2024-02-25 22:56:05:515 [AndroidUiautomator2Driver@1850]     "appium:appPackage": "com.google.android.youtube",
+2024-02-25 22:56:05:515 [AndroidUiautomator2Driver@1850]     "appium:appWaitActivity": "com.google.android.apps.youtube.app.WatchWhileActivity",
+2024-02-25 22:56:05:515 [AndroidUiautomator2Driver@1850]     "appium:automationName": "UiAutomator2",
+2024-02-25 22:56:05:515 [AndroidUiautomator2Driver@1850]     "appium:newCommandTimeout": 240,
+2024-02-25 22:56:05:516 [AndroidUiautomator2Driver@1850]     "appium:fullReset": false,
+2024-02-25 22:56:05:516 [AndroidUiautomator2Driver@1850]     "appium:noReset": false
+2024-02-25 22:56:05:516 [AndroidUiautomator2Driver@1850]   },
+2024-02-25 22:56:05:516 [AndroidUiautomator2Driver@1850]   "firstMatch": [
+2024-02-25 22:56:05:516 [AndroidUiautomator2Driver@1850]     {}
+2024-02-25 22:56:05:516 [AndroidUiautomator2Driver@1850]   ]
+2024-02-25 22:56:05:516 [AndroidUiautomator2Driver@1850] }
+2024-02-25 22:56:05:519 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Session created with session id: ca3d54ea-2de6-4cbf-a660-00262ca1d107
+2024-02-25 22:56:05:519 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Starting 'com.google.android.youtube' directly on the device
+2024-02-25 22:56:05:524 [ADB] Running 'adb -P 5037 start-server'
+2024-02-25 22:56:05:529 [ADB] Using 'adb' from '/Users/e.on/Library/Android/sdk/platform-tools/adb'
+2024-02-25 22:56:05:554 [AndroidDriver] Retrieving device list
+2024-02-25 22:56:05:554 [ADB] Trying to find a connected android device
+2024-02-25 22:56:05:556 [ADB] Getting connected devices
+2024-02-25 22:56:05:589 [ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2024-02-25 22:56:05:590 [AndroidDriver] Using device: emulator-5554
+2024-02-25 22:56:05:590 [ADB] Running 'adb -P 5037 start-server'
+2024-02-25 22:56:05:595 [ADB] Using 'adb' from '/Users/e.on/Library/Android/sdk/platform-tools/adb'
+2024-02-25 22:56:05:618 [ADB] Setting device id to emulator-5554
+2024-02-25 22:56:05:618 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2024-02-25 22:56:05:656 [ADB] Current device property 'ro.build.version.sdk': 33
+2024-02-25 22:56:05:656 [ADB] Getting device platform version
+2024-02-25 22:56:05:656 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2024-02-25 22:56:05:691 [ADB] Current device property 'ro.build.version.release': 13
+2024-02-25 22:56:05:691 [ADB] Device API level: 33
+2024-02-25 22:56:05:691 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Relaxing hidden api policy
+2024-02-25 22:56:05:691 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2024-02-25 22:56:05:745 [Instrumentation] .
+2024-02-25 22:56:05:760 [AndroidDriver] No app sent in, not parsing package/activity
+2024-02-25 22:56:05:760 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2024-02-25 22:56:05:795 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2024-02-25 22:56:05:840 [Instrumentation] Time: 3.151
+2024-02-25 22:56:05:840 [Instrumentation] 
+2024-02-25 22:56:05:841 [Instrumentation] OK (1 test)
+2024-02-25 22:56:05:871 [AndroidDriver] Pushing settings apk to device...
+2024-02-25 22:56:05:871 [ADB] Getting install status for io.appium.settings
+2024-02-25 22:56:05:871 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2024-02-25 22:56:05:908 [Instrumentation] The process has exited with code 0
+2024-02-25 22:56:05:996 [ADB] 'io.appium.settings' is installed
+2024-02-25 22:56:05:996 [ADB] Getting package info for 'io.appium.settings'
+2024-02-25 22:56:05:996 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2024-02-25 22:56:06:062 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.0.4' >= '5.0.4')
+2024-02-25 22:56:06:062 [ADB] There is no need to install/upgrade '/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2024-02-25 22:56:06:062 [ADB] Getting IDs of all 'io.appium.settings' processes
+2024-02-25 22:56:06:062 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'pgrep --help; echo $?''
+2024-02-25 22:56:06:124 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2024-02-25 22:56:06:178 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2024-02-25 22:56:06:178 [Logcat] Starting logs capture with command: /Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+2024-02-25 22:56:06:220 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Forwarding UiAutomator2 Server port 6790 to local port 8200
+2024-02-25 22:56:06:220 [ADB] Forwarding system: 8200 to device: 6790
+2024-02-25 22:56:06:220 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8200 tcp:6790'
+2024-02-25 22:56:06:258 [ADB] Getting install status for io.appium.uiautomator2.server
+2024-02-25 22:56:06:258 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2024-02-25 22:56:06:312 [ADB] 'io.appium.uiautomator2.server' is installed
+2024-02-25 22:56:06:312 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2024-02-25 22:56:06:312 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2024-02-25 22:56:06:634 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('5.12.0' >= '5.12.0')
+2024-02-25 22:56:06:634 [AndroidUiautomator2Driver@1850 (ca3d54ea)] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2024-02-25 22:56:06:634 [ADB] Checking app cert for /Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.12.0.apk
+2024-02-25 22:56:06:655 [ADB] Using the previously cached signature entry for 'appium-uiautomator2-server-v5.12.0.apk'
+2024-02-25 22:56:06:656 [ADB] sha256 hash did match for 'appium-uiautomator2-server-v5.12.0.apk'
+2024-02-25 22:56:06:656 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2024-02-25 22:56:06:656 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server.test'
+2024-02-25 22:56:06:718 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2024-02-25 22:56:06:718 [ADB] Checking app cert for /Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2024-02-25 22:56:06:720 [ADB] Using the previously cached signature entry for 'appium-uiautomator2-server-debug-androidTest.apk'
+2024-02-25 22:56:06:720 [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2024-02-25 22:56:06:720 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Server packages are not going to be (re)installed
+2024-02-25 22:56:06:721 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Waiting up to 30000ms for services to be available
+2024-02-25 22:56:06:721 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+2024-02-25 22:56:06:777 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2024-02-25 22:56:06:777 [ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2024-02-25 22:56:06:777 [ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2024-02-25 22:56:06:777 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2024-02-25 22:56:06:858 [AndroidUiautomator2Driver@1850 (ca3d54ea)] No app capability. Assuming it is already on the device
+2024-02-25 22:56:06:858 [ADB] Getting install status for com.google.android.youtube
+2024-02-25 22:56:06:858 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package com.google.android.youtube'
+2024-02-25 22:56:06:951 [ADB] 'com.google.android.youtube' is installed
+2024-02-25 22:56:06:951 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop com.google.android.youtube'
+2024-02-25 22:56:07:013 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear com.google.android.youtube'
+2024-02-25 22:56:07:140 [AndroidDriver] Performed fast reset on the installed 'com.google.android.youtube' application (stop and clear)
+2024-02-25 22:56:07:141 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Performing shallow cleanup of automation leftovers
+2024-02-25 22:56:07:152 [AndroidUiautomator2Driver@1850 (ca3d54ea)] No obsolete sessions have been detected (socket hang up)
+2024-02-25 22:56:07:152 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+2024-02-25 22:56:07:238 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Starting UIAutomator2 server 5.12.0
+2024-02-25 22:56:07:238 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Using UIAutomator2 server from '/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.12.0.apk' and test from '/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2024-02-25 22:56:07:238 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Waiting up to 30000ms for UiAutomator2 to be online...
+2024-02-25 22:56:07:238 [ADB] Creating ADB subprocess with args: ["-P","5037","-s","emulator-5554","shell","am","instrument","-w","-e","disableAnalytics",true,"io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2024-02-25 22:56:07:243 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Matched '/status' to command name 'getStatus'
+2024-02-25 22:56:07:243 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-02-25 22:56:07:250 [AndroidUiautomator2Driver@1850 (ca3d54ea)] socket hang up
+2024-02-25 22:56:08:255 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Matched '/status' to command name 'getStatus'
+2024-02-25 22:56:08:256 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-02-25 22:56:08:266 [AndroidUiautomator2Driver@1850 (ca3d54ea)] socket hang up
+2024-02-25 22:56:08:762 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2024-02-25 22:56:09:268 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Matched '/status' to command name 'getStatus'
+2024-02-25 22:56:09:268 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-02-25 22:56:09:277 [AndroidUiautomator2Driver@1850 (ca3d54ea)] socket hang up
+2024-02-25 22:56:10:281 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Matched '/status' to command name 'getStatus'
+2024-02-25 22:56:10:281 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-02-25 22:56:10:331 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+2024-02-25 22:56:10:331 [AndroidUiautomator2Driver@1850 (ca3d54ea)] The initialization of the instrumentation process took 3094ms
+2024-02-25 22:56:10:332 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Matched '/session' to command name 'createSession'
+2024-02-25 22:56:10:332 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Proxying [POST /session] to [POST http://127.0.0.1:8200/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","orientation":"PORTRAIT","appPackage":"com.google.android.youtube","appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","automationName":"UiAutomator2","newCommandTimeout":240,"fullReset":false,"noReset":false},"platformName":"Android","orientation":"PORTRAIT","appPackage":"com.google.android.youtube","appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","automationName":"UiAutomator2","newCommandTimeout":240,"fullReset":false,"noReset":false,"deviceName":"emulator-5554","deviceUDID":"emulator-5554"}],"alwaysMatch":{}}}
+2024-02-25 22:56:10:348 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Got response with status 200: {"sessionId":"25b84183-15d9-401e-95f0-6075fe82d7aa","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","orientation":"PORTRAIT","appPackage":"com.google.android.youtube","appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","automationName":"UiAutomator2","newCommandTimeout":240,"fullReset":false,"noReset":false},"platformName":"Android","orientation":"PORTRAIT","appPackage":"com.google.android.youtube","appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","automationName":"UiAutomator2","newCommandTimeout":240,"fullReset":false,"noReset":false,"deviceName":"emulator-5554","deviceUDID":"emulator-5554"}],"alwaysMatch":{}},"sessionId":"25b84183-15d9-401e-95f0-6075fe82d7aa"}}
+2024-02-25 22:56:10:348 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Determined the downstream protocol as 'W3C'
+2024-02-25 22:56:10:360 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/session/25b84183-15d9-401e-95f0-6075fe82d7aa/appium/device/info] with no body
+2024-02-25 22:56:10:470 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Got response with status 200: {"sessionId":"25b84183-15d9-401e-95f0-6075fe82d7aa","value":{"androidId":"d48d5fa621d8bbf5","apiVersion":"33","bluetooth":{"state":"ON"},"brand":"google","carrierName":"T-Mobile","displayDensity":560,"locale":"en_US","manufacturer":"Google","model":"sdk_gphone64_arm64","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30000,"linkUpstreamBandwidthKbps":15000,"networkCapabilities":"NET_CAPABILITY_MMS,NET_CAPABILITY_SUPL,NET_CAPABILITY_DUN,NET_CAPABILITY_FOTA,NET_CAPABILITY_IMS,NET_CAPABILITY_CBS,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-2147483648,"transportTypes":"TRANSPORT_CELLULAR"},"detailedState":"CONNECTED","extraInfo":"epc.tmobile.com","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":13,"subtypeName":"LTE","type":0,"typeName":"MOBILE"},{"capabiliti...
+2024-02-25 22:56:10:470 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window'
+2024-02-25 22:56:10:656 [AndroidDriver] Screen already unlocked, doing nothing
+2024-02-25 22:56:10:656 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Starting 'com.google.android.youtube/undefined and waiting for 'com.google.android.youtube/com.google.android.apps.youtube.app.WatchWhileActivity'
+2024-02-25 22:56:10:657 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2024-02-25 22:56:10:800 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Deleting UiAutomator2 session
+2024-02-25 22:56:10:800 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Deleting UiAutomator2 server session
+2024-02-25 22:56:10:801 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Matched '/' to command name 'deleteSession'
+2024-02-25 22:56:10:801 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Proxying [DELETE /] to [DELETE http://127.0.0.1:8200/session/25b84183-15d9-401e-95f0-6075fe82d7aa] with no body
+2024-02-25 22:56:10:833 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Got response with status 200: {"sessionId":"25b84183-15d9-401e-95f0-6075fe82d7aa","value":null}
+2024-02-25 22:56:10:834 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2024-02-25 22:56:10:838 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop com.google.android.youtube'
+2024-02-25 22:56:10:931 [Logcat] Stopping logcat capture
+2024-02-25 22:56:10:935 [ADB] Removing forwarded port socket connection: 8200 
+2024-02-25 22:56:10:935 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward --remove tcp:8200'
+2024-02-25 22:56:10:966 [AndroidUiautomator2Driver@1850 (ca3d54ea)] Restoring hidden api policy to the device default configuration
+2024-02-25 22:56:10:967 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2024-02-25 22:56:11:065 [AppiumDriver@19c8] Event 'newSessionStarted' logged at 1708901771065 (22:56:11 GMT+0000 (Greenwich Mean Time))
+2024-02-25 22:56:11:066 [AppiumDriver@19c8] Encountered internal error running command: Error: Cannot start the 'com.google.android.youtube' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 1'; Command output: Error: Intent matches multiple activities; can't stop: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 }
+2024-02-25 22:56:11:066 [AppiumDriver@19c8] 
+2024-02-25 22:56:11:066 [AppiumDriver@19c8]     at ADB.startApp (/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/lib/tools/apk-utils.js:180:11)
+2024-02-25 22:56:11:066 [AppiumDriver@19c8]     at AndroidUiautomator2Driver.ensureAppStarts (/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/lib/driver.js:590:5)
+2024-02-25 22:56:11:066 [AppiumDriver@19c8]     at AndroidUiautomator2Driver.startUiAutomator2Session (/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/lib/driver.js:445:7)
+2024-02-25 22:56:11:066 [AppiumDriver@19c8]     at AndroidUiautomator2Driver.createSession (/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/lib/driver.js:241:7)
+2024-02-25 22:56:11:066 [AppiumDriver@19c8]     at AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/lib/appium.js:352:35)
+2024-02-25 22:56:11:068 [HTTP] <-- POST /session 500 5554 ms - 1616
+2024-02-25 22:56:11:068 [HTTP] 
+2024-02-25 22:56:11:075 [HTTP] --> POST /session
+2024-02-25 22:56:11:075 [HTTP] {"capabilities":{"alwaysMatch":{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false},"firstMatch":[{}]},"desiredCapabilities":{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false}}
+2024-02-25 22:56:11:075 [AppiumDriver@19c8] Calling AppiumDriver.createSession() with args: [{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false},null,{"alwaysMatch":{"platformName":"Android","appium:orientation":"PORTRAIT","appium:appPackage":"com.google.android.youtube","appium:appWaitActivity":"com.google.android.apps.youtube.app.WatchWhileActivity","appium:automationName":"UiAutomator2","appium:newCommandTimeout":240,"appium:fullReset":false,"appium:noReset":false},"firstMatch":[{}]}]
+2024-02-25 22:56:11:075 [AppiumDriver@19c8] Event 'newSessionRequested' logged at 1708901771075 (22:56:11 GMT+0000 (Greenwich Mean Time))
+2024-02-25 22:56:11:076 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'Android'
+2024-02-25 22:56:11:076 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2024-02-25 22:56:11:076 [Appium] Will require it at /Users/e.on/.appium/node_modules/appium-uiautomator2-driver
+2024-02-25 22:56:11:076 [Appium] Requiring driver at /Users/e.on/.appium/node_modules/appium-uiautomator2-driver
+2024-02-25 22:56:11:076 [AppiumDriver@19c8] Appium v2.0.1 creating new AndroidUiautomator2Driver (v2.27.0) session
+2024-02-25 22:56:11:076 [AppiumDriver@19c8] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2024-02-25 22:56:11:076 [AppiumDriver@19c8] Appium's BaseDriver version is 9.3.16
+2024-02-25 22:56:11:076 [AppiumDriver@19c8] AndroidUiautomator2Driver's BaseDriver version is 9.3.16
+2024-02-25 22:56:11:076 [AppiumDriver@19c8] Applying relaxed security to 'AndroidUiautomator2Driver' as per server command line argument. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+2024-02-25 22:56:11:076 [AndroidUiautomator2Driver@b1db] Creating session with W3C capabilities: {
+2024-02-25 22:56:11:077 [AndroidUiautomator2Driver@b1db]   "alwaysMatch": {
+2024-02-25 22:56:11:077 [AndroidUiautomator2Driver@b1db]     "platformName": "Android",
+2024-02-25 22:56:11:077 [AndroidUiautomator2Driver@b1db]     "appium:orientation": "PORTRAIT",
+2024-02-25 22:56:11:077 [AndroidUiautomator2Driver@b1db]     "appium:appPackage": "com.google.android.youtube",
+2024-02-25 22:56:11:077 [AndroidUiautomator2Driver@b1db]     "appium:appWaitActivity": "com.google.android.apps.youtube.app.WatchWhileActivity",
+2024-02-25 22:56:11:077 [AndroidUiautomator2Driver@b1db]     "appium:automationName": "UiAutomator2",
+2024-02-25 22:56:11:077 [AndroidUiautomator2Driver@b1db]     "appium:newCommandTimeout": 240,
+2024-02-25 22:56:11:077 [AndroidUiautomator2Driver@b1db]     "appium:fullReset": false,
+2024-02-25 22:56:11:077 [AndroidUiautomator2Driver@b1db]     "appium:noReset": false
+2024-02-25 22:56:11:077 [AndroidUiautomator2Driver@b1db]   },
+2024-02-25 22:56:11:077 [AndroidUiautomator2Driver@b1db]   "firstMatch": [
+2024-02-25 22:56:11:077 [AndroidUiautomator2Driver@b1db]     {}
+2024-02-25 22:56:11:077 [AndroidUiautomator2Driver@b1db]   ]
+2024-02-25 22:56:11:077 [AndroidUiautomator2Driver@b1db] }
+2024-02-25 22:56:11:081 [AndroidUiautomator2Driver@b1db (cc81dc14)] Session created with session id: cc81dc14-41d5-423e-93ee-0185e8fdacd3
+2024-02-25 22:56:11:081 [AndroidUiautomator2Driver@b1db (cc81dc14)] Starting 'com.google.android.youtube' directly on the device
+2024-02-25 22:56:11:081 [ADB] Running 'adb -P 5037 start-server'
+2024-02-25 22:56:11:086 [ADB] Using 'adb' from '/Users/e.on/Library/Android/sdk/platform-tools/adb'
+2024-02-25 22:56:11:109 [AndroidDriver] Retrieving device list
+2024-02-25 22:56:11:109 [ADB] Trying to find a connected android device
+2024-02-25 22:56:11:109 [ADB] Getting connected devices
+2024-02-25 22:56:11:151 [ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2024-02-25 22:56:11:151 [AndroidDriver] Using device: emulator-5554
+2024-02-25 22:56:11:152 [ADB] Running 'adb -P 5037 start-server'
+2024-02-25 22:56:11:157 [ADB] Using 'adb' from '/Users/e.on/Library/Android/sdk/platform-tools/adb'
+2024-02-25 22:56:11:179 [ADB] Setting device id to emulator-5554
+2024-02-25 22:56:11:180 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2024-02-25 22:56:11:218 [ADB] Current device property 'ro.build.version.sdk': 33
+2024-02-25 22:56:11:218 [ADB] Getting device platform version
+2024-02-25 22:56:11:219 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2024-02-25 22:56:11:255 [ADB] Current device property 'ro.build.version.release': 13
+2024-02-25 22:56:11:255 [ADB] Device API level: 33
+2024-02-25 22:56:11:255 [AndroidUiautomator2Driver@b1db (cc81dc14)] Relaxing hidden api policy
+2024-02-25 22:56:11:255 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2024-02-25 22:56:11:334 [AndroidDriver] No app sent in, not parsing package/activity
+2024-02-25 22:56:11:334 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2024-02-25 22:56:11:361 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2024-02-25 22:56:11:396 [AndroidDriver] Pushing settings apk to device...
+2024-02-25 22:56:11:396 [ADB] Getting install status for io.appium.settings
+2024-02-25 22:56:11:397 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2024-02-25 22:56:11:491 [ADB] 'io.appium.settings' is installed
+2024-02-25 22:56:11:491 [ADB] Getting package info for 'io.appium.settings'
+2024-02-25 22:56:11:491 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2024-02-25 22:56:11:537 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.0.4' >= '5.0.4')
+2024-02-25 22:56:11:537 [ADB] There is no need to install/upgrade '/Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2024-02-25 22:56:11:537 [ADB] Getting IDs of all 'io.appium.settings' processes
+2024-02-25 22:56:11:537 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'pgrep --help; echo $?''
+2024-02-25 22:56:11:612 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2024-02-25 22:56:11:724 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2024-02-25 22:56:11:725 [Logcat] Starting logs capture with command: /Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+2024-02-25 22:56:11:796 [AndroidUiautomator2Driver@b1db (cc81dc14)] Forwarding UiAutomator2 Server port 6790 to local port 8200
+2024-02-25 22:56:11:797 [ADB] Forwarding system: 8200 to device: 6790
+2024-02-25 22:56:11:798 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8200 tcp:6790'
+2024-02-25 22:56:11:814 [Instrumentation] .
+2024-02-25 22:56:11:858 [ADB] Getting install status for io.appium.uiautomator2.server
+2024-02-25 22:56:11:858 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2024-02-25 22:56:11:932 [ADB] 'io.appium.uiautomator2.server' is installed
+2024-02-25 22:56:11:932 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2024-02-25 22:56:11:932 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2024-02-25 22:56:12:072 [Instrumentation] Time: 3.086
+2024-02-25 22:56:12:072 [Instrumentation] 
+2024-02-25 22:56:12:072 [Instrumentation] OK (1 test)
+2024-02-25 22:56:12:187 [Instrumentation] The process has exited with code 0
+2024-02-25 22:56:12:382 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('5.12.0' >= '5.12.0')
+2024-02-25 22:56:12:382 [AndroidUiautomator2Driver@b1db (cc81dc14)] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2024-02-25 22:56:12:382 [ADB] Checking app cert for /Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.12.0.apk
+2024-02-25 22:56:12:425 [ADB] Using the previously cached signature entry for 'appium-uiautomator2-server-v5.12.0.apk'
+2024-02-25 22:56:12:425 [ADB] sha256 hash did match for 'appium-uiautomator2-server-v5.12.0.apk'
+2024-02-25 22:56:12:425 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2024-02-25 22:56:12:425 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server.test'
+2024-02-25 22:56:12:530 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2024-02-25 22:56:12:531 [ADB] Checking app cert for /Users/e.on/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2024-02-25 22:56:12:535 [ADB] Using the previously cached signature entry for 'appium-uiautomator2-server-debug-androidTest.apk'
+2024-02-25 22:56:12:535 [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2024-02-25 22:56:12:535 [AndroidUiautomator2Driver@b1db (cc81dc14)] Server packages are not going to be (re)installed
+2024-02-25 22:56:12:536 [AndroidUiautomator2Driver@b1db (cc81dc14)] Waiting up to 30000ms for services to be available
+2024-02-25 22:56:12:536 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+2024-02-25 22:56:12:651 [AndroidUiautomator2Driver@b1db (cc81dc14)] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2024-02-25 22:56:12:652 [ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2024-02-25 22:56:12:652 [ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2024-02-25 22:56:12:652 [ADB] Running '/Users/e.on/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2024-02-25 22:56:12:750 [Appium] Received SIGINT - shutting down
